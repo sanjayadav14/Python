@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 15:59:59 2019
+
+@author: Sanjay Yadav
+"""
+
+l = lambda x,y:x+y 
+print(l(10,20))
