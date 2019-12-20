@@ -1,0 +1,30 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 18:00:34 2019
+
+@author: Sanjay Yadav
+"""
+
+################  Method 1  #######################################
+
+
+a=[8,6,4,2]
+b=[1,2,3,4]
+c=[]
+
+
+for i in a:
+    if i in b:
+        result=c.append(i)
+     
+print(result)
+
+
+#################### Method 2  ###################################
+
+a=[8,6,4,2]
+b=[1,2,3,4]
+
+c=[i for i in a if i in b]
+
+print (c)
