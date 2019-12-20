@@ -1,0 +1,17 @@
+    # -*- coding: utf-8 -*-
+    """
+    Created on Sat Dec 14 14:21:15 2019
+    
+    @author: Sanjay Yadav
+    """
+    
+    num=int(input("Enter a number : "))
+    
+    for i in range(2,num):
+        if num%i == 0:
+            print("Enter number is a Prime number!!!")
+            break
+        else:
+            continue
+            print("Enter number is Not Prime number!!!")
+            
