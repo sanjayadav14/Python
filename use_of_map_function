@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 17:14:37 2019
+
+@author: Sanjay Yadav
+"""
+
+lst = [2,4,6,8]
+
+result = list(map (lambda x:x*2,lst))
+print(result)
