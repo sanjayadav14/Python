@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 15:00:07 2019
+
+@author: Sanjay Yadav
+"""
+
+import sys
+
+lst=sys.argv
+
+for i in lst:
+    print (i)
+    
+print (len(lst))
