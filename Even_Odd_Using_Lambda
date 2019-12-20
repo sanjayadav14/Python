@@ -1,0 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Dec 14 15:57:27 2019
+
+@author: Sanjay Yadav
+"""
+
+l = lambda x: "Yes" if x%2==0 else "No"
+print (l(8))
