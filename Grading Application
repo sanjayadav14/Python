@@ -1,0 +1,37 @@
+
+#### Sanjay Yadav################
+
+### 23-12-2019 16:02:02 ##############
+
+
+
+#!/usr/bin/python2.6
+
+
+math=float(input("Enter marks of Maths : "))
+physics=float(input("Enter marks of physics : "))
+chemistry=float(input("Enter marks of chemistry : "))
+
+
+
+def calc_avg():
+        avg=(math+physics+chemistry)/3
+        return avg
+
+def calc_grade(avg):
+        if avg<=59:
+                print("Your are passed with Grade C!!!")
+        elif avg<=69:
+                print("Your are passed with Grade B!!!")
+        else:
+                print("Your are passed with Grade A!!!")
+
+
+if (math>=35 and physics>=35 and chemistry>=35):
+        avg=calc_avg()
+        calc_grade(avg)
+else:
+        print("Your have failed this exam!!!")
+
+
+
