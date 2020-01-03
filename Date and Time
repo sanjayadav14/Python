@@ -1,0 +1,22 @@
+    # -*- coding: utf-8 -*-
+    """
+    Created on Wed Jan  1 11:23:12 2020
+    
+    @author: Sanjay
+    """
+    
+    import time,datetime
+    epochseconds = time.time()
+    print(epochseconds)
+    
+    t = time.ctime(epochseconds)
+    print(t)
+    
+    dt = datetime.datetime.today()
+    print(dt)
+    
+    print(dt.day,dt.month,dt.year)
+    print('Current date : {}/{}/{}'.format(dt.day,dt.month,dt.year))
+    
+    print(dt.hour,dt.minute,dt.second)
+    print('Current time : {}:{}:{}'.format(dt.hour,dt.minute,dt.second))
