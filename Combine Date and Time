@@ -1,0 +1,14 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Jan  1 11:34:31 2020
+
+@author: Sanjay
+"""
+
+from datetime import *
+
+d = date(2020,1,1)
+t = time(11,36)
+
+dt = datetime.combine(d,t)
+print(dt)
