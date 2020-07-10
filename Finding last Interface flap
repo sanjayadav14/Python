@@ -9,20 +9,18 @@ Interface_list = [["Phy ge-2/0/0","HW 84:18:88:15:62:94","Last_flapped 2020-06-1
 ["Phy ge-2/0/8","HW 84:18:88:19:23:21","Last_flapped 2020-06-11 07:50:35 IST (00:50:00 ago)",["InB 513435627037 180 bps","OutB 9037527 0 bps","InPkt 479837653 56 pps","OutPkt 56982 0 pps"],[["Q0 QPkt 17118 TxPkt 17118 DrpPkt 0"],["Q1 QPkt 0 TxPkt 0 DrpPkt 0"], ["Q2 QPkt 0 TxPkt 0 DrpPkt 0"], ["Q3 QPkt 31098 TxPkt 27664 DrpPkt 0"]]],
 ["Phy ge-2/1/0","HW 84:18:88:18:56:23","Last_flapped 2020-06-11 07:50:35 IST (00:50:00 ago)",["InB 5671635264703 0 bps","OutB 9037527 976 bps","InPkt 479837653 0 pps","OutPkt 56982 43 pps"],[["Q0 QPkt 17118 TxPkt 17118 DrpPkt 0"],["Q1 QPkt 0 TxPkt 0 DrpPkt 0"], ["Q2 QPkt 0 TxPkt 0 DrpPkt 0"], ["Q3 QPkt 39543 TxPkt 12367 DrpPkt 0"]]]]
 
-a= set()
-b= set()
 Rec_bounced_TX_Interfaces=[]
 Rec_bounced_non_TX_Interfaces=[]
 Non_Rec_bounced_Interfaces=[]
-#rex = re.compile('InB.0 bps')
+
 print("Below interface flapped recently \n")
 for i in Interface_list:
 	if "IST (00:" in i[2]:
 		for j in range(1):
 			if (" 0 bps" in i[3][j]) or (" 0 bps" in i[3][j+1]) :
-				a.add(i[0])
+				Rec_bounced_non_TX_Interfaces.append(i[0])
 			else:
-				b.add(i[0])
+				Rec_bounced_TX_Interfaces.append(i[0])
 
 	else:
 		Non_Rec_bounced_Interfaces.append(i[0])
